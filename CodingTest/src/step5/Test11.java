@@ -1,28 +1,19 @@
 package step5;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Test11 {
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException{
 		
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str;
 		
-		while(sc.hasNextLine()){
-			
-			List<String> tokens = new ArrayList<>();
-			
-			Scanner sc2 = new Scanner(sc.nextLine());
-			
-			while(sc2.hasNext()) {
-				tokens.add(sc2.next());
-			}
-			
-			sc2.close();
-			System.out.println(tokens);
+		while((str=br.readLine()) != null) {
+			System.out.println(str);
 		}
-		sc.close();
-
+			
+			
 	}
 }
