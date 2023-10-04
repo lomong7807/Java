@@ -20,11 +20,16 @@ public class Test02 {
 		
 		for(int i = 0; i <= 5; i++) {
 			
+			if(a[i] > b[i]) {
+				c[i] = a[i] - b[i];
+			}
+			
 			if(a[i] < b[i]) {
 				c[i] = a[i] - b[i];
 			}
 			
-			System.out.print(c[i]);
+			
+			System.out.print(c[i]+" ");
 		}
 		sc.close();
 	}
