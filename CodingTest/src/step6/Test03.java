@@ -22,11 +22,11 @@ public class Test03 {
 				}
 			}
 			if(i > a) {
-				for(int k = i-1; k > 0; k--) {
+				for(int k = i%a ; k > 0; k--) {
 					System.out.print(" ");
 				}
 				
-				for(int j = 4; j < (i*2)-1; j--) {
+				for(int j = ((a*2)%i)*2-1; j > 0; j--) {
 					System.out.print("*");
 				}
 			}
